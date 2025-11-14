@@ -7,33 +7,57 @@ Assignment: ex1
 
 // REMIDER : YOU CANT USE ANY CONTROL FLOW OPERATIONS OR FUNCTIONS, ONLY BITWISE. not even "==, &&, ||, !="
 
-int main()
-{
+int main() {
+    /*. Ascii
 
-    // Ascii
+    char ch;
     printf("Ascii:\n");
-    /*. Scan one character from the user.
-        Then, refer to it as an integer.
-        a. Print its value.
-        b:
-        Print “0”, if its integer representation is even.
-        print “1” if its integer representation is odd. */
+    printf("Please enter a character \n");
+    scanf("%c",&ch);
 
-    // 2's complement and other representations
+    printf("Ita numerical value is: %d\n",ch);
+    printf("0 for even, 1 for odd: %d\n",ch&1);
+
+        */
+
+
+
+
+    /*.  2's complement and other representations
+
     printf("\n2's complement to other representations:\n");
-    /*. Scan a negative integer. [2’s complement].
-        Print its value in 1’s complement.
-        Print its value as unsigned. */
+    printf("please enter a negative integer\n");
+    int number;
+    scanf("%d",&number);
+    printf("1's complement: %d\n", ~(~number-1));
+    printf("unigned: %u",number);
 
-    // Shifting right and left
+*/
+
+
+
+
+
+
+    /*. Shifting right and left
+
     printf("\nShifting right and left:\n");
-    /*. Scan 3 integers.
-        The first one - the value you will play with.
-        The second and the third - how much to shift right and left, respectively.
-        Print the value after shifting right and then shifting left. */
+    printf("Please enter 3 integers\n");
+    int value,shiftLeft,shiftRight;
+    scanf("%d %d %d",&value,&shiftLeft,&shiftRight);
+    printf("After shifting right and left: %d", (value >> shiftRight) << shiftLeft);
+    printf("\n %d %d %d", value, shiftLeft, shiftRight);
+
+ */
+
 
     // Even - Odd
     printf("\nEven - Odd:\n");
+    int num1, num2, num3;
+    printf("please enter 3 integers");
+    scanf("%d %d %d", &num1, &num2, &num3);
+    printf("
+
     /* Scan 3 Integers.
     If at least two of them are even - print 0.
     If at least two of them are odd - print 1. */
